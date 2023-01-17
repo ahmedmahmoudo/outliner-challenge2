@@ -1,7 +1,7 @@
 import React from "react";
 
 export const ProgressBarComponent = (props) => {
-  const { progress, color, style, height = "40px" } = props;
+  const { progress, color, style, height = "40px", className } = props;
 
   return (
     <div
@@ -12,6 +12,7 @@ export const ProgressBarComponent = (props) => {
         ...style,
       }}
       data-testid="progress-bar"
+      className={className}
     ></div>
   );
 };

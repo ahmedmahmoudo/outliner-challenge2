@@ -6,8 +6,8 @@ const onAnswerClicked = jest.fn((answer) => answer);
 describe("Question Component", () => {
   const questionProps = {
     question: "Just%20a%20question%20to%20render",
-    correctAnswer: "Yes%20That's%20Me",
-    incorrectAnswers: ["Not%20Me", "Or%20Me", "Neither%20Me"],
+    correct_answer: "Yes%20That's%20Me",
+    incorrect_answers: ["Not%20Me", "Or%20Me", "Neither%20Me"],
     chosenAnswer: undefined,
     onAnswerClicked,
   };
@@ -49,16 +49,10 @@ describe("Question Component", () => {
       getByText = screen.getByText;
     });
 
-    it("can not click on any button", () => {
-      fireEvent.click(getByText(/Yes That's Me/));
-      expect(onAnswerClicked).not.toBeCalledWith("Yes%20That's%20Me");
-    });
-
-    it("all buttons are disabled", () => {
-      expect(getByText(/Yes That's Me/)).toBeDisabled();
-      expect(getByText(/Not Me/)).toBeDisabled();
-      expect(getByText(/Or Me/)).toBeDisabled();
-      expect(getByText(/Neither Me/)).toBeDisabled();
+    it("all other buttons are disabled", () => {
+      expect(getByText(/Not Me/)).toHaveClass("disabled");
+      expect(getByText(/Or Me/)).toHaveClass("disabled");
+      expect(getByText(/Neither Me/)).toHaveClass("disabled");
     });
   });
 });

@@ -6,10 +6,6 @@ import { QuestionsComponent } from "../../components/questions";
 
 export const QuizPage = () => {
   const [progress, setProgress] = useState(0);
-  const [score, setScore] = useState(0);
-
-  const onScoreChanged = (correct) => {};
-
   return (
     <div className="container">
       <ProgressBarComponent
@@ -20,7 +16,6 @@ export const QuizPage = () => {
       <QuestionsComponent
         questions={questions}
         onQuestionChanged={setProgress}
-        onScoreChanged={onScoreChanged}
       />
     </div>
   );
