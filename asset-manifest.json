@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/outliner-challenge2/index.html/static/css/main.a6a86f64.css",
-    "main.js": "/outliner-challenge2/index.html/static/js/main.56f0ffc4.js",
-    "static/media/logo.svg": "/outliner-challenge2/index.html/static/media/logo.103b5fa18196d5665a7e12318285c916.svg",
-    "index.html": "/outliner-challenge2/index.html/index.html",
-    "main.a6a86f64.css.map": "/outliner-challenge2/index.html/static/css/main.a6a86f64.css.map",
-    "main.56f0ffc4.js.map": "/outliner-challenge2/index.html/static/js/main.56f0ffc4.js.map"
+    "main.css": "/outliner-challenge2/static/css/main.a6a86f64.css",
+    "main.js": "/outliner-challenge2/static/js/main.3d9ed51c.js",
+    "static/media/logo.svg": "/outliner-challenge2/static/media/logo.103b5fa18196d5665a7e12318285c916.svg",
+    "index.html": "/outliner-challenge2/index.html",
+    "main.a6a86f64.css.map": "/outliner-challenge2/static/css/main.a6a86f64.css.map",
+    "main.3d9ed51c.js.map": "/outliner-challenge2/static/js/main.3d9ed51c.js.map"
   },
   "entrypoints": [
     "static/css/main.a6a86f64.css",
-    "static/js/main.56f0ffc4.js"
+    "static/js/main.3d9ed51c.js"
   ]
 }
